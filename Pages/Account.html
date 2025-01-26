@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="Account.css">
+</head>
+<body>
+    <header>
+        <img src="/Images/Logo.png" alt="Mido's Logo" class="logo">
+        <div class="nav-container">
+            <button class="menu-toggle" aria-label="Toggle navigation" data-toggle>
+                &#9776;
+            </button>
+            <nav id="navbar">
+                <a href="../index.html">Homepage</a>
+                <a href="about-us.html">About Us</a>
+                <a href="#">Menu</a>
+                <a href="../promotions.html">Promo</a>
+                <a href="Careers.html">Careers</a>
+                <a href="contact-us.html">Contact Us</a>
+                <div class="icons">
+                    <a href="#" class="cart-icon"><img src="/Images/Shopping bag.png" alt="Cart"></a>
+                    <a href="../login.html" class="user-icon , active"><img src="/Images/person.png" alt="User"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="Accred">
+     <div id="containerone">
+        <div class="head1">
+            <h1>ACCOUNT</h1>
+            <h3>HELLO LEA !</h3>
+            <br>
+            <div style="display: flex; ">
+                <img style="height: 25px; width: 25px;" src="../Images/Star 56.png" alt="">
+            <h2 style="color: white;"> 100 points</h2>
+        </div>
+        </div>
+<div id="loyalty-containerrr">
+        <div class="loyalty-container">
+            <button class="heart-button" onclick="showInfo('heart')">❤️</button>
+            <a href="#" class="loyalty-link" onclick="showInfo('loyalty')">REWARDS</a>
+            <a href="#" class="loyalty-link" onclick="showInfo('Accinfo')">ACC INFO</a>
+        </div>
+    </div>
+        <div id="info-section" class="info-section hidden">
+           
+            <div id="info-content"></div>
+        </div>
+    </div>
+    <div id="containertwo">
+        <img src="../Images/whiteCrosslines.png" alt="Cross Lines" class="background-image">
+        <div id="star">
+            <img id="imgstar" src="../Images/Star 2.png" alt="Star" class="foreground-image">
+            <button class="upload-button">UPLOAD PICTURE</button>
+        </div>
+    </div>
+    </div>
+
+    <script>
+
+        
+        function showInfo(type) {
+            const infoSection = document.getElementById('info-section');
+            const infoContent = document.getElementById('info-content');
+
+          
+            infoSection.classList.remove('hidden');
+
+           
+            if (type === 'heart') {
+                infoContent.innerHTML = `
+                  
+   <div class="menu-container">
+    <h2 style:>Collect all your favorites by clicking on the <span class="heart-icon">&#9825;</span> while you shop.</h2>
+    <div class="menu-item">
+        <span class="item-name">D.B Burger</span>
+        <span class="item-price">LBP 900,000</span>
+        <button class="add-to-cart">ADD TO CART</button>
+    </div>
+    <div class="menu-item">
+        <span class="item-name">Customized Burger</span>
+        <span class="item-price">LBP 1,500,000</span>
+        <button class="add-to-cart">ADD TO CART</button>
+    </div>
+    <div class="menu-item">
+        <span class="item-name">Mido’s Burger</span>
+        <span class="item-price">LBP 850,000</span>
+        <button class="add-to-cart">ADD TO CART</button>
+    </div>
+    <div class="menu-item">
+        <span class="item-name">Cheddar Burger</span>
+        <span class="item-price">LBP 850,000</span>
+        <button class="add-to-cart">ADD TO CART</button>
+    </div>
+    <div class="delivery-location">
+        <div id="delspan">
+        <span>SAVED DELIVERY LOCATION:</span>
+        
+        <span class="location">Shhim South Lebanon 0000</span>
+        </div>
+        <button class="pick-button">PICK</button>
+    </div>
+</div>
+
+                `;
+            } else if (type === 'loyalty') {
+                infoContent.innerHTML = `
+                    <div class="rewards-section">
+        <h2>EARN REWARDS FOR SHARING YOUR EXPERIENCE</h2>
+         <p style="color: black;">Get rewarded with points with every review you submit</p>
+        <div class="add-review">
+            <div class="add-icon">
+                <span>+</span>
+            </div>
+            <span class="add-text">Add review</span>
+        </div>
+        <textarea class="review-input" placeholder="Write your review here..."></textarea>
+        <p class="points-info">
+            with every review you make earn 0 pts</b>. 
+            For <b>100 points</b> earn <b>5% discount</b>.
+        </p>
+        <div class="points-summary">
+            <div class="add-icon">
+                <span>+</span>
+            </div>
+            <span class="add-text">Place order</span>
+        </div>
+    </div>
+                `;
+            }
+
+
+            else if (type === 'Accinfo') {
+                infoContent.innerHTML = `
+                   <div class="form-container">
+  <div class="input-group">
+    <label class="label" for="name">NAME</label>
+    <div class="input-wrapper">
+      <input type="text" id="name" value="Lea ABDALLAH">
+      <button type="button" class="edit-btn">EDIT</button>
+    </div>
+  </div>
+
+  <div class="input-group">
+    <label class="label" for="email">EMAIL</label>
+    <div class="input-wrapper">
+      <input type="email" id="email" value="Lea.abd18@icloud.com">
+      <button type="button" class="edit-btn">EDIT</button>
+    </div>
+  </div>
+
+  <div class="input-group">
+    <label class="label" for="password">PASSWORD</label>
+    <div class="input-wrapper">
+      <input type="password" id="password" value="••••••••">
+      <button type="button" class="edit-btn">EDIT</button>
+    </div>
+  </div>
+
+  <div class="input-group">
+    <label class="label" for="location">LOCATION</label>
+    <div class="input-wrapper">
+      <input type="text" id="location" value="Chhim-chammis">
+      <button type="button" class="edit-btn">EDIT</button>
+    </div>
+  </div>
+
+  <div class="input-group">
+    <label class="label" for="phone">PHONE</label>
+    <div class="input-wrapper">
+      <input type="text" id="phone" value="76 705 430">
+      <button type="button" class="edit-btn">EDIT</button>
+    </div>
+  </div>
+<div id="bdaay">
+  <label for="bday">YOUR B-DAY</label>
+  <div id="three">
+  <p class="birthday-note">Enter your birthday to receive a free meal every year :)</p>
+  <div class="birthday-select">
+    <select id="month">
+      <option>January</option>
+      <option>February</option>
+      <option selected>February</option>
+      <option>March</option>
+    </select>
+    <select id="day">
+      <option>1</option>
+      <option>2</option>
+      <option selected>28</option>
+    </select>
+  </div>
+  </div>
+  </div>
+</div>`;
+            }
+        }
+        
+    </script>
+
+<script>document.addEventListener('DOMContentLoaded', () => {
+  const toggleButton = document.querySelector('.menu-toggle');
+  const navbar = document.querySelector('#navbar');
+  const body = document.body;
+
+  if (navbar.classList.contains('active') && !navbar.contains(event.target) && !toggleButton.contains(event.target)) {
+      navbar.classList.remove('active');
+      body.classList.remove('navbar-open');
+      console.log("Navbar closed due to outside click.");
+  }
+  
+  if (!toggleButton) {
+      console.error("Toggle button (.menu-toggle) not found.");
+      return;
+  }
+  if (!navbar) {
+      console.error("Navbar (#navbar) not found.");
+      return;
+  }
+
+  console.log("Toggle button and navbar successfully found.");
+
+  toggleButton.addEventListener('click', () => {
+      console.log("Toggle button clicked.");
+
+      navbar.classList.toggle('active');
+
+      if (navbar.classList.contains('active')) {
+          console.log("Navbar is now visible (active class added).");
+          body.classList.add('navbar-open');
+
+      } else {
+          console.log("Navbar is now hidden (active class removed).");
+          body.classList.remove('navbar-open');
+      }
+  });
+});</script>
+
+    </section>
+
+    <footer>
+       
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2 >Our Menu</h2>
+                <p>Beef</p>
+                <p>Chicken</p>
+                <p>Salads</p>
+                <p>Breakfast</p>
+                <p>Meals</p>
+                <p>Drinks</p>
+            </div>
+            <div class="footer-section">
+                <h2>About us</h2>
+                <p>Our story</p>
+                <p>Diplomas</p>
+                <p>Behind The Scenes</p>
+            </div>
+            <div class="footer-section">
+                <h2>Promotions</h2>
+                <p>Student discount</p>
+                <p>Events</p>
+            </div>
+            <div class="footer-section">
+                <h2>Careers</h2>
+                <p>Join Us</p>
+            </div>
+            <div class="footer-section">
+                <h2>Contact us</h2>
+                <p><span style="color: yellow;">SAIDA:</span>  <br> 07 727 672</p>
+                <p> <span style="color: yellow;">ANTELIAS:</span> <br> 78 849 405</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img class="simg"  src="../Images/facebook.png" alt="Facebook" /></a>
+                <a href="#"><img class="simg"  src="../Images/tiktok.png" alt="TikTok" /></a>
+                <a href="#"><img class="simg" src="../Images/Instagram.png" alt="Instagram" /></a>
+            </div>
+        </div>
+            <p class="footer-bottom">@MIDOS2024</p>
+        
+    </footer>
+
+
+</body>
+</html>
+

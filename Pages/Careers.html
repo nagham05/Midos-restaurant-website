@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers</title>
+    <link rel="stylesheet" href="Careers.css" />
+    <link rel="stylesheet" href="URL-to-Gotham-Font-Stylesheet.css">
+
+  </head>
+  <body>
+    <header>
+      <img src="/Images/Logo.png" alt="Mido's Logo" class="logo">
+      <div class="nav-container">
+          <button class="menu-toggle" aria-label="Toggle navigation" data-toggle>
+              &#9776;
+          </button>
+          <nav id="navbar">
+              <a href="../index.html">Homepage</a>
+              <a href="about-us.html">About Us</a>
+              <a href="#">Menu</a>
+              <a href="../promotions.html">Promo</a>
+              <a href="Careers.html" class="active">Careers</a>
+              <a href="contact-us.html">Contact Us</a>
+              <div class="icons">
+                  <a href="#" class="cart-icon"><img src="/Images/Shopping bag.png" alt="Cart"></a>
+                  <a href="../login.html" class="user-icon"><img src="/Images/person.png" alt="User" ></a>
+              </div>
+          </nav>
+      </div>
+  </header>
+
+    <section>
+      <div id="red">
+        <h1><span> JOIN</span> US</h1>
+        <div>
+          <h3>
+            EXPLORE OUR EXCITING CAREER OPORRTUNITIES AND JOIN OUR <br />DYNAMIC
+            TEAM TODAY
+          </h3>
+          <br />
+          <button id="applynow">APPLY NOW</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="pic">
+        <img src="../Images/careerphoto.png" alt="" style="width: 1350px" />
+      </div>
+    </section>
+
+    <section id="info">
+      <div id="vacancies">
+        <h2>Check our current vacancies:</h2>
+
+        <div id="currvac">
+          <div class="rows">
+            <button>CHEF</button>
+            <button>WAITER/WAITRESS</button>
+            <button>FINANCE & AUDIT</button>
+            <button>MARKETING & GRAPHIC</button>
+            <button>HUMAN RESOURCES</button>
+          </div>
+          <div class="rowss">
+            <span class="numlist">1</span>
+            <span class="numlist">0</span>
+            <span class="numlist">0</span>
+            <span class="numlist">2</span>
+            <span class="numlist">0</span>
+          </div>
+        </div>
+      </div>
+      <div id="sendapp">
+        <div class="form-row">
+            <label for="">NAME</label>
+            <input type="text" />
+        </div>
+        <div class="form-row">
+            <label for="">EMAIL</label>
+            <input type="text" />
+        </div>
+        <div class="form-row">
+            <label for="">PHONE NUMBER</label>
+            <input type="text" />
+        </div>
+        <div class="form-row">
+            <label for="">INSERT YOUR CV</label>
+            <div id="insert">
+                <img src="../Images/File plus.png" alt="" />
+            </div>
+        </div>
+        <button id="submit-button">SEND YOUR APPLICATION</button>
+    </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+       
+            <div class="footer-section">
+                <h2>Our Menu</h2>
+                <p>Beef</p>
+                <p>Chicken</p>
+                <p>Salads</p>
+                <p>Breakfast</p>
+                <p>Meals</p>
+                <p>Drinks</p>
+            </div>
+            <div class="footer-section">
+                <h2>About us</h2>
+                <p>Our story</p>
+                <p>Diplomas</p>
+                <p>Behind The Scenes</p>
+            </div>
+            <div class="footer-section">
+                <h2>Promotions</h2>
+                <p>Student discount</p>
+                <p>Events</p>
+            </div>
+            <div class="footer-section">
+                <h2>Careers</h2>
+                <p>Join Us</p>
+            </div>
+            <div class="footer-section">
+                <h2>Contact us</h2>
+                <p><span style="color: yellow;">SAIDA:</span>  <br> 07 727 672</p>
+                <p> <span style="color: yellow;">ANTELIAS:</span> <br> 78 849 405</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img class="simg"  src="../Images/facebook.png" alt="Facebook" /></a>
+                <a href="#"><img class="simg"  src="../Images/tiktok.png" alt="TikTok" /></a>
+                <a href="#"><img class="simg" src="../Images/Instagram.png" alt="Instagram" /></a>
+            </div>
+        </div>
+            <p class="footer-bottom">@MIDOS2024</p>
+        
+    </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleButton = document.querySelector('.menu-toggle');
+      const navbar = document.querySelector('#navbar');
+      const body = document.body;
+    
+      if (navbar.classList.contains('active') && !navbar.contains(event.target) && !toggleButton.contains(event.target)) {
+          navbar.classList.remove('active');
+          body.classList.remove('navbar-open');
+          console.log("Navbar closed due to outside click.");
+      }
+      
+      if (!toggleButton) {
+          console.error("Toggle button (.menu-toggle) not found.");
+          return;
+      }
+      if (!navbar) {
+          console.error("Navbar (#navbar) not found.");
+          return;
+      }
+    
+      console.log("Toggle button and navbar successfully found.");
+    
+      toggleButton.addEventListener('click', () => {
+          console.log("Toggle button clicked.");
+    
+          navbar.classList.toggle('active');
+    
+          if (navbar.classList.contains('active')) {
+              console.log("Navbar is now visible (active class added).");
+              body.classList.add('navbar-open');
+    
+          } else {
+              console.log("Navbar is now hidden (active class removed).");
+              body.classList.remove('navbar-open');
+          }
+      });
+    });
+    
+    document.getElementById("submit-button").addEventListener("click", function () {
+    const sendappDiv = document.getElementById("sendapp");
+    const originalContent = sendappDiv.innerHTML;
+    sendappDiv.style.backgroundColor = "#a91b1b";
+    sendappDiv.innerHTML = "";
+
+    const message = document.createElement("div");
+    message.textContent = "Your application has been sent.";
+    message.style.color = "white";
+    message.style.fontSize = "2rem";
+    message.style.fontWeight = "bold";
+    message.style.textAlign = "center";
+    message.style.position = "absolute";
+    message.style.top = "50%";
+    message.style.left = "50%";
+    message.style.transform = "translate(-50%, -50%)"; 
+
+    sendappDiv.style.position = "relative";
+    sendappDiv.appendChild(message);
+    
+    setTimeout(() => {
+        sendappDiv.style.backgroundColor = ""; 
+        sendappDiv.innerHTML = originalContent; 
+    }, 2000);
+});
+
+    
+
+    
+    </script>
+  
+  </body>
+  
+</html>

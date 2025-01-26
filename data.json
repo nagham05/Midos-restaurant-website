@@ -1,0 +1,249 @@
+{
+  "reviews": [
+      {
+          "category": "Breakfast",
+          "reviews": [
+              {
+                  "username": "foodie_123",
+                  "rating": 4,
+                  "comment": "Amazing breakfast options! Loved the pancakes and fresh juices."
+              },
+              {
+                  "username": "morningBite",
+                  "rating": 5,
+                  "comment": "The best breakfast I've had in ages. Highly recommend the avocado toast!"
+              },
+              {
+                  "username": "sunriseEats",
+                  "rating": 4,
+                  "comment": "Great way to start the day. The omelette was perfectly cooked."
+              },
+              {
+                  "username": "brunchFan",
+                  "rating": 5,
+                  "comment": "I could eat their waffles every morning. So light and fluffy!"
+              },
+              {
+                  "username": "earlyBird",
+                  "rating": 3,
+                  "comment": "Good breakfast, but I wish they had more vegan options."
+              },
+              {
+                  "username": "eggspert",
+                  "rating": 5,
+                  "comment": "Best eggs Benedict I've ever had. Perfectly poached eggs and hollandaise sauce!"
+              }
+          ]
+      },
+      {
+          "category": "Salads",
+          "reviews": [
+              {
+                  "username": "health_nut",
+                  "rating": 4,
+                  "comment": "Fresh and crisp salads with a good variety of dressings. Perfect for a light meal."
+              },
+              {
+                  "username": "veggie_lover",
+                  "rating": 4,
+                  "comment": "Loved the unique salad combos! The quinoa and avocado salad was my favorite."
+              },
+              {
+                  "username": "greenLife",
+                  "rating": 5,
+                  "comment": "Healthy and delicious! The kale Caesar was fantastic."
+              },
+              {
+                  "username": "plant_based",
+                  "rating": 3,
+                  "comment": "Nice salads but a bit pricey for the portion size."
+              },
+              {
+                  "username": "saladEnthusiast",
+                  "rating": 4,
+                  "comment": "Tasty and fresh, but I wish they offered more protein options."
+              },
+              {
+                  "username": "crunchyGreens",
+                  "rating": 5,
+                  "comment": "The mixed greens with strawberries and nuts were a refreshing surprise!"
+              }
+          ]
+      },
+      {
+          "category": "Starters",
+          "reviews": [
+              {
+                  "username": "starter_guru",
+                  "rating": 5,
+                  "comment": "Great selection of appetizers. The mozzarella sticks were perfectly crispy!"
+              },
+              {
+                  "username": "appetizerFan",
+                  "rating": 5,
+                  "comment": "Delicious starters! The nachos were loaded and flavorful."
+              },
+              {
+                  "username": "smallPlates",
+                  "rating": 4,
+                  "comment": "Good variety. The wings had a nice kick to them!"
+              },
+              {
+                  "username": "tasteTest",
+                  "rating": 5,
+                  "comment": "Tried the bruschetta, and it was absolutely amazing."
+              },
+              {
+                  "username": "spicyTastes",
+                  "rating": 3,
+                  "comment": "The jalapeño poppers were good, but a bit too spicy for my taste."
+              },
+              {
+                  "username": "biteSize",
+                  "rating": 5,
+                  "comment": "Perfect bites to start the meal. Loved the garlic bread!"
+              }
+          ]
+      },
+      {
+          "category": "Sandwiches",
+          "reviews": [
+              {
+                  "username": "sandwichLover",
+                  "rating": 5,
+                  "comment": "The sandwiches are packed with flavor! I loved the turkey club."
+              },
+              {
+                  "username": "bread_and_butter",
+                  "rating": 4,
+                  "comment": "Tasty sandwiches with fresh ingredients. The BLT is a must-try!"
+              },
+              {
+                  "username": "subMaster",
+                  "rating": 5,
+                  "comment": "Their Italian sub is the best I’ve had! Fresh and flavorful."
+              },
+              {
+                  "username": "deli_daily",
+                  "rating": 3,
+                  "comment": "Decent sandwiches but nothing extraordinary."
+              },
+              {
+                  "username": "wrapItUp",
+                  "rating": 4,
+                  "comment": "The wraps are a nice twist! Loved the grilled chicken wrap."
+              },
+              {
+                  "username": "sandwichKing",
+                  "rating": 5,
+                  "comment": "Excellent sandwiches! The pastrami melt was out of this world."
+              }
+          ]
+      },
+      {
+          "category": "Burger",
+          "reviews": [
+              {
+                  "username": "burgerFanatic",
+                  "rating": 5,
+                  "comment": "Juicy, delicious burgers with all the right toppings. Highly recommend!"
+              },
+              {
+                  "username": "grill_master",
+                  "rating": 4,
+                  "comment": "Great burgers and the fries are amazing too. Definitely worth a visit!"
+              },
+              {
+                  "username": "beefLover",
+                  "rating": 5,
+                  "comment": "The double cheeseburger was everything I wanted and more!"
+              },
+              {
+                  "username": "pattyLover",
+                  "rating": 4,
+                  "comment": "Good flavors but the bun was a little soggy."
+              },
+              {
+                  "username": "classicBite",
+                  "rating": 5,
+                  "comment": "Amazing classic cheeseburger with fresh toppings and a soft bun."
+              },
+              {
+                  "username": "veggieBurgerFan",
+                  "rating": 3,
+                  "comment": "The veggie burger was decent, but could use a bit more flavor."
+              }
+          ]
+      },
+      {
+          "category": "Meals",
+          "reviews": [
+              {
+                  "username": "full_plate",
+                  "rating": 5,
+                  "comment": "The meals here are very filling and well-cooked. Good value for money."
+              },
+              {
+                  "username": "dinner_time",
+                  "rating": 4,
+                  "comment": "Had a great dinner experience. The steak was cooked to perfection!"
+              },
+              {
+                  "username": "comfort_foodie",
+                  "rating": 5,
+                  "comment": "Great comfort food options. The pot roast was like a warm hug."
+              },
+              {
+                  "username": "gourmet_lover",
+                  "rating": 4,
+                  "comment": "Good food but a bit on the heavy side for my taste."
+              },
+              {
+                  "username": "soulFoodie",
+                  "rating": 5,
+                  "comment": "The fried chicken and mashed potatoes were absolutely divine!"
+              },
+              {
+                  "username": "foodCritic89",
+                  "rating": 3,
+                  "comment": "Not bad, but the pasta could use more seasoning."
+              }
+          ]
+      },
+      {
+          "category": "Service",
+          "reviews": [
+              {
+                  "username": "happyCustomer",
+                  "rating": 5,
+                  "comment": "Excellent service! The staff was attentive and friendly."
+              },
+              {
+                  "username": "service_seeker",
+                  "rating": 5,
+                  "comment": "Great service, they made sure we had everything we needed."
+              },
+              {
+                  "username": "tableForTwo",
+                  "rating": 4,
+                  "comment": "Polite and quick service, but a bit slow during peak hours."
+              },
+              {
+                  "username": "regularPatron",
+                  "rating": 5,
+                  "comment": "Always welcoming! They remember my order each time I come."
+              },
+              {
+                  "username": "quickServe",
+                  "rating": 4,
+                  "comment": "Fast service, though they could smile a bit more!"
+              },
+              {
+                  "username": "attentiveStaff",
+                  "rating": 5,
+                  "comment": "The staff was on point. Never had to ask twice for anything!"
+              }
+          ]
+      }
+  ]
+}

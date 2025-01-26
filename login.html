@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LogIn</title>
+        <link rel="stylesheet" href="loginStyle.css">         
+    </head>
+    <body>
+        <header>
+            <img src="/Images/Logo.png" alt="Mido's Logo" class="logo">
+            <div class="nav-container">
+                <button class="menu-toggle" aria-label="Toggle navigation" data-toggle>
+                    &#9776;
+                </button>
+                <nav id="navbar">
+                    <a href="../index.html">Homepage</a>
+                    <a href="Pages/about-us.html">About Us</a>
+                    <a href="#">Menu</a>
+                    <a href="promotions.html">Promo</a>
+                    <a href="Pages/Careers.html">Careers</a>
+                    <a href="Pages/contact-us.html" >Contact Us</a>
+                    <div class="icons">
+                        <a href="#" class="cart-icon"><img src="/Images/Shopping bag.png" alt="Cart"></a>
+                        <a href="login.html" class="user-icon"><img src="/Images/Person.png" alt="User" class="active"></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div id="content-container">
+            <div id="content">
+                <div id="content-title">
+                    <h1 id="outline-text">CRAVING</h1>
+                    <h1 id="bold-text"> SOMETHING?</h1>
+                    <p>Let’s get you started</p>
+                </div>
+
+                <div id="form-btns">
+                    <img src="imgs/white-green-lines.png" alt id="white-green-lines">
+
+                    <div class="buttons-container">
+                        <button id="login-btn">Log In</button>
+                        <p> OR </p>
+                        <button id="signup-btn">Sign Up</button>
+                    </div>
+                    
+                </div>
+
+            </div>
+      
+                    <div id="forms">
+                        <div id="signup-form" class="active">
+                            <form action="Pages/Account.html">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" >
+                                <label for="email">Email</label>
+                                <input type="email" name="email" >
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" name="phone" >
+
+                                <p>Enter your birthday to receive a free meal every year :)</p>
+
+                                <div id="bday-container">
+                                    <!-- Month Dropdown -->
+                                    <label for="month">Month</label>
+                                    <div class="dropdown" id="month-dropdown">
+                                        <select class="dropdown-btn" id="month">
+                                            <option value="">Select Month</option>
+                                        </select>
+                                        <div class="dropdown-content" id="month-list"></div>
+                                    </div>
+                                
+                                    <!-- Day Dropdown -->
+                                    <label for="day">Day</label>
+                                    <div class="dropdown" id="day-dropdown">
+                                        <select class="dropdown-btn" id="day">
+                                            <option value="">Select Day</option>
+                                        </select>
+                                        <div class="dropdown-content" id="day-list"></div>
+                                    </div>
+                                </div>
+                                
+                                <button type="submit">CREATE ACCOUNT</button>
+                            </form>
+                        </div>
+
+                        <div id="login-form">
+                            <form action="Pages/Account.html" class="hidden" >
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password">
+                                <button type="submit">Log In</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+            <div id="img-form">
+                <div id="login-img">
+                    <img src="imgs/login.png" alt>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+       
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h2 >Our Menu</h2>
+                    <p>Beef</p>
+                    <p>Chicken</p>
+                    <p>Salads</p>
+                    <p>Breakfast</p>
+                    <p>Meals</p>
+                    <p>Drinks</p>
+                </div>
+                <div class="footer-section">
+                    <h2>About us</h2>
+                    <p>Our story</p>
+                    <p>Diplomas</p>
+                    <p>Behind The Scenes</p>
+                </div>
+                <div class="footer-section">
+                    <h2>Promotions</h2>
+                    <p>Student discount</p>
+                    <p>Events</p>
+                </div>
+                <div class="footer-section">
+                    <h2>Careers</h2>
+                    <p>Join Us</p>
+                </div>
+                <div class="footer-section">
+                    <h2>Contact us</h2>
+                    <p><span style="color: yellow;">SAIDA:</span>  <br> 07 727 672</p>
+                    <p> <span style="color: yellow;">ANTELIAS:</span> <br> 78 849 405</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><img class="simg"  src="Images/facebook.png" alt="Facebook" /></a>
+                    <a href="#"><img class="simg"  src="Images/tiktok.png" alt="TikTok" /></a>
+                    <a href="#"><img class="simg" src="Images/Instagram.png" alt="Instagram" /></a>
+                </div>
+            </div>
+                <p class="footer-bottom">@MIDOS2024</p>
+            
+        </footer>
+
+        <script>
+                const loginBtn = document.getElementById('login-btn');
+                const signupBtn = document.getElementById('signup-btn');
+                const loginForm = document.getElementById('login-form');
+                const signupForm = document.getElementById('signup-form');
+            
+                loginBtn.addEventListener('click', () => {
+                    loginForm.classList.add('active');
+                    signupForm.classList.remove('active');
+                });
+            
+                signupBtn.addEventListener('click', () => {
+                    signupForm.classList.add('active');
+                    loginForm.classList.remove('active');
+                });
+
+                // Set default visibility of the forms
+                window.onload = function () {
+                    signupForm.classList.add('active'); // Show signup form initially
+                    loginForm.classList.remove('active'); // Hide login form initially
+                };
+            
+                document.addEventListener("DOMContentLoaded", function () {
+                const months = [
+                    { name: "January", days: 31 },
+                    { name: "February", days: 28 },
+                    { name: "March", days: 31 },
+                    { name: "April", days: 30 },
+                    { name: "May", days: 31 },
+                    { name: "June", days: 30 },
+                    { name: "July", days: 31 },
+                    { name: "August", days: 31 },
+                    { name: "September", days: 30 },
+                    { name: "October", days: 31 },
+                    { name: "November", days: 30 },
+                    { name: "December", days: 31 },
+                ];
+
+                const monthDropdown = document.getElementById("month-list");
+                const dayDropdown = document.getElementById("day-list");
+                const monthSelect = document.getElementById("month");
+                const daySelect = document.getElementById("day");
+
+                // Populate the month dropdown with months
+                months.forEach((month) => {
+                    const optionDiv = document.createElement("div"); // Declare optionDiv here
+                    optionDiv.classList.add("dropdown-option");
+                    optionDiv.innerHTML = `<img src="imgs/white-star.png" alt="star" style="width:16px; vertical-align:middle; margin-right:5px;"> ${month.name}`;
+                    optionDiv.addEventListener('click', function() {
+                        monthSelect.textContent = month.name; // Correctly update selected month text
+                        // Update days based on selected month
+                        updateDays(month);
+                    });
+                    monthDropdown.appendChild(optionDiv); // Append to the dropdown list
+                });
+
+                // Function to update the days in the day dropdown
+                function updateDays(month) {
+                    dayDropdown.innerHTML = ''; // Clear existing options in the day dropdown
+
+                    // Handle leap year for February
+                    if (month.name === "February") {
+                        const year = new Date().getFullYear(); // Current year
+                        const isLeapYear = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+                        populateDays(isLeapYear ? 29 : 28);
+                    } else {
+                        populateDays(month.days);
+                    }
+                }
+
+                // Function to populate the days in the day dropdown
+                function populateDays(totalDays) {
+                    for (let i = 1; i <= totalDays; i++) {
+                        const optionDiv = document.createElement("div"); // Declare optionDiv here
+                        optionDiv.classList.add("dropdown-option");
+                        optionDiv.innerHTML = `<img src="imgs/white-star.png" alt="star" style="width:16px; vertical-align:middle; margin-right:5px;"> ${i}`;
+                        optionDiv.addEventListener('click', function() {
+                            daySelect.textContent = i; // Correctly update selected day text
+                        });
+                        dayDropdown.appendChild(optionDiv); // Append to the dropdown list
+                    }
+                }
+
+                // Initialize with a default set of days (January by default)
+                populateDays(31);
+            });
+
+            window.onload = function () {
+                signupForm.classList.add('active'); // Show signup form initially
+                loginForm.classList.remove('active'); // Hide login form initially
+
+                // Make the "Sign Up" button active initially
+                signupBtn.classList.add('active');
+                loginBtn.classList.remove('active');
+            };
+
+            // Add event listeners for login and signup buttons
+
+            loginBtn.addEventListener('click', () => {
+                loginForm.classList.add('active');
+                signupForm.classList.remove('active');
+                
+                // Change button active states
+                loginBtn.classList.add('active');
+                signupBtn.classList.remove('active');
+            });
+
+            signupBtn.addEventListener('click', () => {
+                signupForm.classList.add('active');
+                loginForm.classList.remove('active');
+                
+                // Change button active states
+                signupBtn.classList.add('active');
+                loginBtn.classList.remove('active');
+            });
+
+            optionDiv.addEventListener('click', function () {
+                const option = document.createElement('option');
+                option.value = month.name; // Set value of the option
+                option.textContent = month.name; // Set text of the option
+                monthSelect.innerHTML = ''; // Clear existing options
+                monthSelect.appendChild(option); // Add the selected option
+                monthSelect.value = month.name; // Update select value
+                updateDays(month); // Update days based on selected month
+            });
+            optionDiv.addEventListener('click', function () {
+                const option = document.createElement('option');
+                option.value = i;
+                option.textContent = i;
+                daySelect.innerHTML = ''; // Clear existing options
+                daySelect.appendChild(option); // Add the selected option
+                daySelect.value = i; // Update select value
+            });
+
+
+        </script>
+        <script src="navbar-toggle.js"></script>
+
+    </body>
+</html>
